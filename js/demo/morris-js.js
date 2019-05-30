@@ -16,7 +16,7 @@ $(document).on('nifty.ready', function () {
     // http://morrisjs.github.io/morris.js/
     // =================================================================
 
-    /*var chart = Morris.Area({
+    var chart = Morris.Area({
         element: 'demo-morris-area',
         data: [{
             period: 'January 16',
@@ -190,7 +190,7 @@ $(document).on('nifty.ready', function () {
         var legendItem = $('<div class=\'morris-legend-items\'></div>').text(label);
         $('<span></span>').css('background-color', chart.options.lineColors[i]).prependTo(legendItem);
         $('#demo-morris-area-legend').append(legendItem)
-    })*/
+    })
 
 
 
@@ -201,12 +201,26 @@ $(document).on('nifty.ready', function () {
     // http://morrisjs.github.io/morris.js/
     // =================================================================
     var day_data = [
-        {'elapsed': '2015', 'value': 100},
-        {'elapsed': '2016', 'value': 80},
-        {'elapsed': '2017', 'value': 50},
-        {'elapsed': '2018', 'value': 70},
-        {'elapsed': '2019', 'value': 75},
-        {'elapsed': '2020', 'value': 80}
+        {'elapsed': '2000', 'value': 18},
+        {'elapsed': '2001', 'value': 24},
+        {'elapsed': '2002', 'value': 9},
+        {'elapsed': '2003', 'value': 12},
+        {'elapsed': '2004', 'value': 13},
+        {'elapsed': '2005', 'value': 22},
+        {'elapsed': '2006', 'value': 11},
+        {'elapsed': '2007', 'value': 26},
+        {'elapsed': '2008', 'value': 12},
+        {'elapsed': '2009', 'value': 19},
+        {'elapsed': '2000', 'value': 15},
+        {'elapsed': '2001', 'value': 24},
+        {'elapsed': '2002', 'value': 9},
+        {'elapsed': '2003', 'value': 12},
+        {'elapsed': '2004', 'value': 13},
+        {'elapsed': '2005', 'value': 22},
+        {'elapsed': '2006', 'value': 15},
+        {'elapsed': '2007', 'value': 26},
+        {'elapsed': '2008', 'value': 12},
+        {'elapsed': '2009', 'value': 19}
     ];
     Morris.Line({
         element: 'demo-morris-line',
@@ -235,7 +249,7 @@ $(document).on('nifty.ready', function () {
     // http://morrisjs.github.io/morris.js/
     // =================================================================
 
-    /*var chart = Morris.Area({
+    var chart = Morris.Area({
         element: 'demo-morris-area-full',
         data: [{
             period: 'January 16',
@@ -408,7 +422,7 @@ $(document).on('nifty.ready', function () {
         var legendItem = $('<div class=\'morris-legend-items\'></div>').text(label);
         $('<span></span>').css('background-color', chart.options.lineColors[i]).prependTo(legendItem);
         $('#demo-morris-area-legend-full').append(legendItem)
-    })*/
+    })
 
 
 
@@ -422,19 +436,29 @@ $(document).on('nifty.ready', function () {
     Morris.Bar({
         element: 'demo-morris-bar',
         data: [
-            { y: 'Tax', a: 75 },
-            { y: 'CPF', a: 20 },
-            { y: 'Credits', a: 100 },
-            { y: 'Offence', a: 0 }
+            { y: '1', a: 100, b: 90 },
+            { y: '2', a: 75,  b: 65 },
+            { y: '3', a: 20,  b: 15 },
+            { y: '5', a: 50,  b: 40 },
+            { y: '6', a: 75,  b: 95 },
+            { y: '7', a: 15,  b: 65 },
+            { y: '8', a: 70,  b: 100 },
+            { y: '9', a: 100, b: 70 },
+            { y: '10', a: 50, b: 70 },
+            { y: '11', a: 20, b: 10 },
+            { y: '12', a: 40, b: 90 },
+            { y: '13', a: 70, b: 30 },
+            { y: '14', a: 50, b: 50 },
+            { y: '15', a: 100, b: 90 }
         ],
         xkey: 'y',
-        ykeys: ['a'],
-        labels: ['Series A'],
+        ykeys: ['a', 'b'],
+        labels: ['Series A', 'Series B'],
         gridEnabled: true,
         gridLineColor: 'rgba(0,0,0,.1)',
         gridTextColor: '#8f9ea6',
         gridTextSize: '11px',
-        barColors: ['#163377'],
+        barColors: ['#1abc9c', '#d8e8e5'],
         resize:true,
         hideHover: 'auto'
     });
@@ -446,7 +470,7 @@ $(document).on('nifty.ready', function () {
     // -----------------------------------------------------------------
     // http://morrisjs.github.io/morris.js/
     // =================================================================
-    /*Morris.Donut({
+    Morris.Donut({
         element: 'demo-morris-donut',
         data: [
             {label: 'Download Sales', value: 12},
@@ -459,5 +483,5 @@ $(document).on('nifty.ready', function () {
             '#d8dfe2'
         ],
         resize:true
-    });*/
+    });
 });
