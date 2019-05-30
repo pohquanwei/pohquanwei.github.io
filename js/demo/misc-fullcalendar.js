@@ -60,7 +60,7 @@ $(document).on('nifty.ready', function() {
         eventLimit: true, // allow "more" link when too many events
         events: [
             {
-                title: 'Happy Hour',
+                title: 'Corp Tax Filing',
                 start: '2017-12-05',
                 end: '2017-12-07',
                 className: 'purple'
@@ -77,7 +77,7 @@ $(document).on('nifty.ready', function() {
                 className: 'warning'
             },
             {
-                title: 'Meeting',
+                title: 'Annual Conference',
                 start: '2017-12-20T10:30:00',
                 end: '2017-12-20T12:30:00',
                 className: 'danger'
